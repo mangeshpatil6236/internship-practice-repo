@@ -1,0 +1,79 @@
+Technology / Domain
+
+Java Full Stack Development
+Backend Development using Spring Boot
+Frontend Development using React.js
+REST API Development
+Database Management with MySQL
+
+
+
+Frameworks Used
+
+Spring Framework
+Spring Boot
+Spring MVC
+Spring Security
+Hibernate / JPA
+React.js
+
+
+
+Where It Is Used
+
+Banking Applications
+E-Commerce Websites
+Healthcare Systems
+ERP Applications
+CRM Applications
+Enterprise Web Applications
+Microservices Architecture
+
+
+
+Required Skill Set
+
+Core Java
+OOP Concepts
+Collections Framework
+Java 8 Features (Lambda, Stream API)
+Exception Handling
+Multithreading Basics
+JDBC
+Spring Boot
+Spring MVC
+Spring Security
+Hibernate / JPA
+REST APIs
+MySQL
+React.js
+HTML
+CSS
+JavaScript
+Git & GitHub
+Maven
+Postman
+SQL Queries
+
+
+
+Career Opportunities
+
+Java Developer
+Java Full Stack Developer
+Backend Developer
+Software Engineer
+Spring Boot Developer
+API Developer
+Web Application Developer
+Microservices Developer
+Technical Consultant
+Future Scope
+High Demand in IT Industry
+Strong Enterprise Adoption
+Cloud Integration Opportunities
+Microservices Development
+DevOps Integration
+AI & Machine Learning Integration
+Good Salary Growth
+Long-Term Career Stability
