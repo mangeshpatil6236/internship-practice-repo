@@ -1,0 +1,100 @@
+Tables:
+
+Employee
+Department
+
+Questions:
+
+1. Top 5 highest salary employees
+
+Query => 
+	select *
+	from employee 
+	order by salary desc
+	limit 5;	
+
+
+2. Department wise employee count
+
+Query => 
+	select dept_id, count(*) as employee_count
+	from employee
+	group by dept_id;
+
+
+3. Find Second highest salary
+
+Query => 
+	select max(salary) as second_highest_salary
+	from employee
+	where salary < (
+		select max(salary)
+	    from employee
+	);	
+
+
+4. Employees whose salary > department average salary
+	
+Query => 
+
+	select e.*
+	from employee e
+	where e.salary >
+	(
+		select avg(e2.salary)
+		from employee e2
+		where e2.dept_id = e.dept_id
+	);
+
+
+5. Inner Join
+	
+Query =>
+
+	select e.emp_id,
+		e.emp_name,
+		e.dept_id
+	from employee e
+	inner join department d
+	on e.dept_id = d.dept_id;
+	
+6. Left Join
+
+Query =>
+	
+	select e.emp_id,
+		e.emp_name,
+		e.dept_id
+	from employee e
+	left join department d
+	on e.dept_id = d.dept_id;
+
+
+7. Group By with Having
+
+Query =>
+
+	select dept_id,
+	count(*) as employee_count
+	from employee
+	group by dept_id
+	having count(*) > 2;	
+
+8. Employees hired in last 6 months
+
+Query =>
+
+	select *from employee 
+	where hire_date >= date_sub(curdate(), interval 6 month);
+
+9. Find the Duplicates records
+
+Query =>
+
+	select emp_name,
+	count(*) as duplicate_count
+	from employee
+	group by emp_name
+	having count(*) > 1;
+
+ 
